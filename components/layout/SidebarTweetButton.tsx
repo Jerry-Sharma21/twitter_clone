@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import { FaFeather } from 'react-icons/fa';
 
+import useLoginModal from '@/hooks/useLoginModal';
+
 const SidebarTweetButton: React.FC = () => {
+  const loginModal = useLoginModal();
+
+  const onClick = useCallback(() => {
+    loginModal.onOpen();
+  }, [loginModal]);
+
   return (
-    <div>
+    <div onClick={onClick}>
       <div
         className="mt-6 lg:hidden rounded-full h-14
         w-14 p-4 flex items-center justify-center 

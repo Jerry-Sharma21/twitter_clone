@@ -1,7 +1,13 @@
 import React from 'react';
 
+import Header from '@/components/Header';
+
 const Home: React.FC = () => {
-  return <div className="text-white">Hello World</div>;
+  return (
+    <>
+      <Header label="Home" />
+    </>
+  );
 };
 
 export default Home;

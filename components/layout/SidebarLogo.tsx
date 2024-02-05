@@ -17,7 +17,8 @@ const SidebarLogo: React.FC = () => {
        justify-center 
        hover:bg-blue-300 
        hover:bg-opacity-10 
-       cursor-pointer"
+       cursor-pointer
+       transition"
     >
       <BsTwitter size={28} color="white" />
     </div>
